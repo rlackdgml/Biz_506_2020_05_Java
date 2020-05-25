@@ -16,6 +16,8 @@ public class Var_02 {
 		System.out.println(num1 + "x" + ++num2 + "=" + (num1 * num2));
 		System.out.println(num1 + "x" + ++num2 + "=" + (num1 * num2));
 		System.out.println(num1 + "x" + ++num2 + "=" + (num1 * num2));
+		System.out.println(num1 + "x" + ++num2 + "=" + (num1 * num2));
+		System.out.println(num1 + "x" + ++num2 + "=" + (num1 * num2));
 		
 		System.out.println("=====================================================");
 		System.out.println();
