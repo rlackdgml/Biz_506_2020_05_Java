@@ -26,15 +26,14 @@ public class Var_17 {
 						
 					
 		int intsum = 0;
-		int inAvg = 0;
+		int intAvg = 0;
 		intsum = intkorsocre;
 		intsum += intEngsocre;
 		intsum += intMathsocre;
 		
-	// = intsum / 3;
-		
+		intAvg = intsum / 3;
 		System.out.println("총점 : "+ intsum);
-		//System.out.println("평균 :" + intAvg);
+		System.out.println("평균 : " + intAvg);
 		
 		
 		
