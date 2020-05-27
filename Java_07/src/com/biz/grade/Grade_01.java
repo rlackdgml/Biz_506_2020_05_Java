@@ -40,6 +40,7 @@ public class Grade_01 {
 		intsum = intKor;
 		intsum += intEng;
 		intsum += intMath;
+		
 
 	}
 
