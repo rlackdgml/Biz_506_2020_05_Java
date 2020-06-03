@@ -14,8 +14,8 @@ public class ScoreServiceV2 {
 		this.scoreList = scoreList;
 		
 	}
-public void scoreSum() {
-	for(int i = 0 ; i < scoreList.length ; i++) {
+    public void scoreSum() {
+	  for(int i = 0 ; i < scoreList.length ; i++) {
 		scoreList[i].setStSum(
 				  scoreList[i].getKor()
 				+ scoreList[i].getEng()
