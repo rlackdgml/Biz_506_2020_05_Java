@@ -39,7 +39,9 @@ public class ScoreEx_02 {
 		ScoreServiceV1 sService = new ScoreServiceV1();
 		sService.scoreList(scoreList);
 		ScoreServiceV2 sService1 = new ScoreServiceV2();
-		sService1.scoreList(scoreList);
+		sService.scoreList(scoreList);
+		
+	
 		
 		
 	}

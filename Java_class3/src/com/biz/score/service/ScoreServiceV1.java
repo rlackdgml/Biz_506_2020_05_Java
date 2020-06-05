@@ -85,7 +85,7 @@ public class ScoreServiceV1 {
 			   math/scores.length,
 			   music/scores.length,
 			   sum/scores.length,
-			   avg/scores.length);
+			   avg/scores.length); 
 	   
 	   
    }

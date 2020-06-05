@@ -33,7 +33,7 @@ public class ScoreServiceV1 {
 			System.out.println(sum);
 			
 		}
-		System.out.println("==========================================================");
+		System.out.print("=================================================");
 		
 		
 	}
