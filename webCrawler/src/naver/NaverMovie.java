@@ -16,11 +16,11 @@ public class NaverMovie {
 		int cnt = 0;
 		
 		while (true) {
-			String url = "https://movie.naver.com/movie/bi/mi/pointWriteFormList.nhn?code=189633&type=after&isActualPointWriteExecute=false&isMileageSubscriptionAlready=false&isMileageSubscriptionReject=false&page="+page;
+			String url = "https://movie.naver.com/movie/bi/mi/pointWriteFormList.nhn?code=+189633&type=after&isActualPointWriteExecute=false&isMileageSubscriptionAlready=false&isMileageSubscriptionReject=false&page="+page;
 			Document doc = Jsoup.connect(url).get();
 			Elements movieList = doc.select("div.score_result > ul > li");
 			String nowPage = doc.select("input#page").attr("value");
-			System.out.println(prePage + "," + nowPage);
+		//	System.out.println(prePage + "," + nowPage);
 			
 			if(nowPage.equals(prePage)) {
 				break;
@@ -36,7 +36,7 @@ public class NaverMovie {
 				content = movie.select("div.score_reple > p > span").get(0).text();
 				score = Integer.parseInt(movie.select("div.star_score > em").get(0).text());
 				writer = movie.select("div.score_reple a > span").get(0).text();
-				regdate = movie.select("div.score_reple em").get(1).text();
+				regdate = movie.select("div.score_reple em").get(1).text().substring(0,10);
 
 				System.out.println("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■");
 				System.out.println("내용 :" + content);
