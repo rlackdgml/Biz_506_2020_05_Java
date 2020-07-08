@@ -38,9 +38,10 @@ public class ScoreServiceImplV1 implements ScoreService {
 
 		System.out.print("학번>>END:입력 ");
 		String strNum = scan.nextLine();
-		if (strNum.equals("END"))
+		if (strNum.equals("END")) {
 
 			return false;
+		}
 
 		System.out.print("국어 >> ");
 		String strKor = scan.nextLine();
