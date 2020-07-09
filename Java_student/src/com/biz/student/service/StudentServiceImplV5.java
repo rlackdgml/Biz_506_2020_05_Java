@@ -5,6 +5,7 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.PrintStream;
+import java.util.List;
 
 import com.biz.student.domain.StudentVO;
 
@@ -19,6 +20,15 @@ import com.biz.student.domain.StudentVO;
 public class StudentServiceImplV5 extends StudentServiceImplV2 {
 	
 	private PrintStream outPut;
+	
+
+	@Override
+	public List<StudentVO> getStudentList() {
+		// TODO Auto-generated method stub
+		// 필드변수로 선언되어 있는 studentList를 외부에서 사용할 수 있도록
+		// getter 수행
+		return studentList;
+	}
 
 	public StudentServiceImplV5() {
 		outPut = System.out;

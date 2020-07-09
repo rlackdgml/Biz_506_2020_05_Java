@@ -56,7 +56,7 @@ public class StudentServiceImplV1 implements StudentService {
 	
 	@Override
 	public boolean inputStudent() {
-		
+		/*
 		StudentVO stdVO = new StudentVO();
 		
 		Scanner scan = new Scanner(System.in);
@@ -110,11 +110,17 @@ public class StudentServiceImplV1 implements StudentService {
 		// true를 return하여 다음 학생 정보를 입력하도록
 		// 호출한 곳에 통보(return)해야 하는데 이때 true를 return 하도록 해야한다.
 		return true;
-	
+	*/
 	}
 
 	@Override
 	public void studentList() {
+	}
+
+	@Override
+	public List<StudentVO> getStudentList() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }
