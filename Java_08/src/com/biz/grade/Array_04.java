@@ -14,6 +14,17 @@ public class Array_04 {
 			}
 
 		}
+		
+		for ( int i = 1 ; i <= 100 ; i++ ) {
+			System.out.printf("%d\t",i);
+			
+			if(i % 10 == 0) {
+				System.out.println();
+			}
+			
+		}
 
 	}
 }
+
+

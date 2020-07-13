@@ -56,6 +56,7 @@ public class StudentServiceImplV1 implements StudentService {
 	
 	@Override
 	public boolean inputStudent() {
+		return false;
 		/*
 		StudentVO stdVO = new StudentVO();
 		
